@@ -12,7 +12,7 @@ and cfg/yolov4_custom_test.cfg
 """
 import os
 
-classes=os.getenv("NUM_CLASSES", 4)
+classes=int(os.getenv("NUM_CLASSES", 4))
 max_batches=8000
 batch=64
 subdivisions=16
